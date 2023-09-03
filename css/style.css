@@ -404,7 +404,7 @@ a:focus {
   position: relative;
 }
 
-/* @media (min-width: 800px) {
+@media (min-width: 800px) {
   .destination_section .box3::after{
     content: url("../images/Decore.png");
     position: absolute;
@@ -413,7 +413,7 @@ a:focus {
     width: 80px;
     z-index: -1;
   }
-} */
+}
 
 @media (max-width: 780px){
   .carousel-inner .img-box img{
@@ -422,11 +422,11 @@ a:focus {
   }
 }
 
-/* @media (max-width: 777px){
+@media (max-width: 777px){
   .logo{
     display: none;
   }
-} */
+}
 
 
 .footer-social-media i{
