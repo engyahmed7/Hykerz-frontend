@@ -83,6 +83,40 @@ body {
   color: #5E6282;
 }
 
+
+.enjoy-text {
+  position: relative;
+  background-image: url('../images/line.png');
+  background-repeat: no-repeat;
+  background-position: left; /* Align the background image to the left */
+  background-size: 100% auto;
+  padding: 0 10px;
+}
+
+.enjoy-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: -50px;
+  height: 5px;
+  background-image: url('../images/line.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%; /* Set the background size to extend horizontally */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.enjoy-text span {
+  background-image: url('../images/line.png');
+  background-repeat: no-repeat;
+  background-position: left; /* Align the background image to the left */
+  background-size: auto 100%;
+  padding: 0 10px;
+}
+
+
 .app img{
     width: 25px;
     padding-right: 5px;
