@@ -1,10 +1,9 @@
-/* fonts import */
-@import url("../fonts/octin_sports_rg.ttf");
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .layout_padding {
@@ -489,7 +488,7 @@ a:focus {
 }
 
 .footer-section{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .destination_section .card{
@@ -510,3 +509,23 @@ a:focus {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+.service-hover {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.service-hover:hover{
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+
