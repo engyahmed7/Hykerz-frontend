@@ -594,6 +594,9 @@ button.prev:active {
 
 .btn {
   width: auto;
+}
+
+.app .btn{
   padding: 15px 10px;
   border-radius:15px ;
   -webkit-border-radius:15px ;
