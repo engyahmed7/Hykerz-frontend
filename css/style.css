@@ -479,7 +479,7 @@ a:focus {
 }
 
 .footer-text{
-  font-size:12px;
+  font-size:13px;
 }
 
 .footer-section{
@@ -593,8 +593,13 @@ button.prev:active {
 }
 
 .btn {
-  width: auto; 
-  padding-top: 15zpx;
+  width: auto;
+  padding: 15px 10px;
+  border-radius:15px ;
+  -webkit-border-radius:15px ;
+  -moz-border-radius:15px ;
+  -ms-border-radius:15px ;
+  -o-border-radius:15px ;
 }
 
 @media (min-width: 992px) and (max-width: 1285px) {
