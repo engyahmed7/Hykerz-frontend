@@ -1,9 +1,9 @@
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   color: #0c0c0c;
   background-color: #ffffff;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: 'Volkhov', serif;
 }
 
 .layout_padding {
@@ -63,6 +63,24 @@ body {
   color: #333;
 }
 
+.logo-text{
+  position: absolute;
+  /* left: 70px; */
+}
+
+@media screen and (min-width: 777px) and (max-width: 1282px) {
+  .logo-text{
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 1282px) {
+  .logo-text{
+    left: 56px;
+  }
+}
+
+
 .landing{
   height: 100vh;
 }
@@ -74,47 +92,28 @@ body {
 }
 
 .dest .paragraph{
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size:45px;
+  
 }
 
 .dest .paragraph2{
   color: #5E6282;
 }
-
+.text-color{
+  color: #181E4B!important;
+}
 
 .enjoy-text {
   position: relative;
-  background-image: url('../images/line.png');
-  background-repeat: no-repeat;
-  background-position: left; /* Align the background image to the left */
-  background-size: 100% auto;
-  padding: 0 10px;
 }
 
-.enjoy-text::before {
-  content: "";
+.enjoy-text::after {
+  content: url('../images/line2.png'); 
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: -50px;
-  height: 5px;
-  background-image: url('../images/line.png');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: auto 100%; /* Set the background size to extend horizontally */
-  transform: translateY(-50%);
-  z-index: -1;
+  bottom: -30px;
+  left: -25px;
 }
-
-.enjoy-text span {
-  background-image: url('../images/line.png');
-  background-repeat: no-repeat;
-  background-position: left; /* Align the background image to the left */
-  background-size: auto 100%;
-  padding: 0 10px;
-}
-
 
 .app img{
     width: 25px;
@@ -125,6 +124,7 @@ body {
     height: 200px;
     width: 200px;
 }
+
 .plane1{
     margin-top: 120px;
 }
@@ -157,7 +157,6 @@ body {
     padding-bottom: 70px;
 }
 .dot-image{
-    /* put image at the end */
     position: absolute;
     bottom: -100px;
     right: 0;
@@ -168,7 +167,6 @@ body {
     font-weight: 500;
     color: #5E6282;
 }
-/* in screen 775 remove images */
 @media screen and (max-width: 775px) {
     .plane1{
         display: none;
@@ -382,7 +380,7 @@ a:focus {
   border: none;
   opacity: 1;
   margin: 0 2.5px;
-  color: black;
+  color: #89898D;
 }
 
 
@@ -407,8 +405,6 @@ a:focus {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-  
-  
 }
 
 .destination_section .box .img-box {
@@ -439,10 +435,10 @@ a:focus {
 
 @media (min-width: 800px) {
   .destination_section .box3::after{
-    content: url("../images/Decore.png");
+    content: url("../images/Decore2.png");
     position: absolute;
     bottom: 0;
-    right: -1px;
+    right: -50px;
     width: 80px;
     z-index: -1;
   }
@@ -451,7 +447,6 @@ a:focus {
 @media (max-width: 780px){
   .carousel-inner .img-box img{
     width: 25%!important;
-
   }
 }
 
@@ -501,7 +496,6 @@ a:focus {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   border:none;
-
 }
 
 .destination_section img{
@@ -528,4 +522,84 @@ a:focus {
   -o-transform: scale(1.05);
 }
 
+      
+#slide-container {   
+  height: 500px; 
+  position: relative;  
+  margin: 0 auto;
+  padding: 0;   
+  overflow: hidden;
+  z-index: 10;
+}
+
+
+#slides article {   
+  top: 100%;
+  width: 100%;   
+  height: 100%;      
+  position: absolute;    
+  display: block;
+  z-index: 0;
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+/* Slideshow button */ 
+
+.button-slide{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  height: 50%;
+
+  /* transform: translate(40%, 40%);
+  -webkit-transform: translate(40%, 40%);
+  -moz-transform: translate(40%, 40%);
+  -ms-transform: translate(40%, 40%);
+  -o-transform: translate(40%, 40%); */
+}
+
+button.next {
+  background-color: transparent;
+  border: none;
+
+  z-index: 10;
+}
+
+button.next:active {
+ cursor: pointer;
+ margin-bottom: -7px;
+
+}
+
+button.prev {
+  background-color: transparent;
+  border: none;
+
+  z-index: 10;
+}
+
+button.prev:active {
+ cursor: pointer;
+ margin-top: -7px;
+-webkit-transition-duration: 0.1s;
+  
+}
+
+.btn {
+  width: auto; 
+  padding-top: 15zpx;
+}
+
+@media (min-width: 992px) and (max-width: 1285px) {
+  .btn {
+    width: 100%; 
+  }
+}
 
