@@ -70,13 +70,13 @@ body {
 
 @media screen and (min-width: 777px) and (max-width: 1282px) {
   .logo-text{
-    left: 40px;
+    left: 55px;
   }
 }
 
 @media screen and (min-width: 1282px) {
   .logo-text{
-    left: 56px;
+    left: 70px;
   }
 }
 
@@ -504,7 +504,7 @@ a:focus {
   border-top-right-radius: 10px;
 }
 
-.service-hover {
+.service-animation {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -512,7 +512,7 @@ a:focus {
   -o-transition: all 0.3s ease-in-out;
 }
 
-.service-hover:hover{
+.service-animation:hover{
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   transform: scale(1.05);
