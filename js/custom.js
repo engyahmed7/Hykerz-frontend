@@ -45,7 +45,7 @@ var         startPos = { "top":'100%',  "z-index": "0" },
 
 //Dots functions
 function selectDots(){  
-  n = count + 1;
+  let n = count + 1;
   $('#dots li:nth-child('+n+')').addClass('selected');
   $('#dots li:nth-child('+n+')').siblings().removeClass('selected');
 }
@@ -54,7 +54,7 @@ function clickDots() {
   
  $('#dots li').bind('click',function (){
    
-  var index = $(this).index();
+  let index = $(this).index();
    if (count > index){ 
       
      $(slides[count]).animate(prevPos,0).css(transit);
@@ -118,7 +118,7 @@ function playSlides() {
    function loop() {
       advance();
       selectDots();
-      timer = setTimeout(loop, 5000);
+      // timer = setTimeout(loop, 5000);
       unbindBtn();
       }                        
    loop();       
