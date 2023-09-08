@@ -71,13 +71,13 @@ body {
 
 @media screen and (min-width: 777px) and (max-width: 1282px) {
   .logo-text{
-    left: 55px;
+    left: 70px;
   }
 }
 
 @media screen and (min-width: 1282px) {
   .logo-text{
-    left: 70px;
+    left: 100px;
   }
 }
 
